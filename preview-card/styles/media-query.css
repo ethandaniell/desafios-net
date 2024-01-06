@@ -1,0 +1,26 @@
+@media screen and (min-width: 1080px) {
+    main {
+        width: 384px;
+    }
+
+    main section#imagem {
+        width: 330px;
+        border-radius: 10px;
+    }
+
+    div#avatar img {
+        display: block;
+        float: left;
+        width: 45px;
+        margin-top: 10px;
+        margin-right: 16px;
+    }
+    
+    div#avatar p {
+        display: block;
+        float: right;
+        margin-top: 19px;
+        margin-right: 170px;
+        font-weight: bolder;
+    }
+}
