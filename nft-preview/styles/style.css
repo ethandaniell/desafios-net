@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 96vw;
+    height: 100vh;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    color: white;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.146);
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    width: 80vw;
+}
+
+section#imagem {
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    width: 392px;
+    height: 300px;
+}
+
+section#imagem:hover {
+    background-image: url(../images/icon-view.svg);
+    background-color: rgba(127, 255, 212, 0.053);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#conteudo div#text h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+section#conteudo div#text h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+section#conteudo div#text p#textp {
+    font-size: 19px;
+    margin-bottom: 19px;
+    color: hsla(215, 52%, 70%, 0.676);
+}
+
+section#conteudo div#text img#i1 {
+    float: left;
+}
+
+section#conteudo div#text p#eth {
+    float: left;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+section#conteudo div#text img#i2 {
+    float: right;
+    margin-right: 100px;
+    width: 20px;
+}
+
+section#conteudo div#text p#days {
+    float: right;
+    font-size: 1.1em;
+    margin-right: -110px;
+}
+
+section#conteudo div#foot {
+    border: solid rgba(255, 255, 255, 0.087);
+    border-left-color: hsl(216, 50%, 16%);
+    border-right-color: hsl(216, 50%, 16%);
+    border-bottom-color: hsl(216, 50%, 16%);
+    height: 50px;
+    margin-top: 50px;
+}
+
+section#conteudo div#foot img {
+    width: 35px;
+    margin-top: 14px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+
+section#conteudo div#foot p {
+    float: center;
+    color: hsla(215, 52%, 70%, 0.9);
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+@media screen and (min-width: 1080px) {
+    main {
+        width: 400px;
+    }
+}
