@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <h1>calc</h1>
+        <div class="theme">
+            <h2>THEME</h2>
+            <div class="switch-theme">
+                <ul class="num-lista">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>               
+                <div>
+                    <span class="toggle">
+                        <button class="circulo"></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calculadora">
+
+        <div class="result">
+            <p>0</p>
+        </div>
+
+        <div class="nums">
+            <div class="botoes-linha1">
+                <button>
+                    7
+                </button>
+                <button>
+                    8
+                </button>
+                <button>
+                    9
+                </button>
+                <button class="btt-diferente">
+                    DEL
+                </button>
+            </div>
+
+            <div class="botoes-linha2">
+                <button>
+                    4
+                </button>
+                <button>
+                    5
+                </button>
+                <button>
+                    6
+                </button>
+                <button>
+                    &plus;
+                </button>
+            </div>
+
+            <div class="botoes-linha3">
+                <button>
+                    1
+                </button>
+                <button>
+                    2
+                </button>
+                <button>
+                    3
+                </button>
+                <button>
+                    -
+                </button>
+            </div>
+
+            <div class="botoes-linha4">
+                <button>
+                    ,
+                </button>
+                <button>
+                    0
+                </button>
+                <button>
+                    &divide;
+                </button>
+                <button>
+                    x
+                </button>
+            </div>
+
+            <div class="botoes-linha5">
+                <button class="btt-diferente" id="btt-diferente-t">
+                    RESET
+                </button>
+                <button id="btt-diferente">
+                    &equals;
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>         
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Dandi</a>.
+    </footer>
+
+    <script src="./src/calculadora.js"></script>
+    <script src="./src/theme.js"></script>
+</body>
+</html>
