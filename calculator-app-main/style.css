@@ -105,7 +105,7 @@ h2 {
     align-items: center;
 }
 
-.toggle .circulo {
+.toggle .circle {
     background: var(--bttDifHover);
     box-shadow: none;
     width: 14px;
@@ -115,11 +115,11 @@ h2 {
     cursor: pointer;
 }
 
-.circulo:hover {
+.circle:hover {
     transform: none ;
 }
 
-.num-lista {
+.num-list {
     columns: 3;
     gap: 20px;
     width: 10px;
@@ -144,7 +144,7 @@ p {
     font-weight: 700;
 }
 
-.calculadora {
+.calculator {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,40 +180,40 @@ button:hover {
     transition: transform .2s;
 }
 
-.botoes-linha1, 
-.botoes-linha2, 
-.botoes-linha3, 
-.botoes-linha4, 
-.botoes-linha5 {
+.buttons-line1, 
+.buttons-line2, 
+.buttons-line3, 
+.buttons-line4, 
+.buttons-line5 {
     width: 400px;
     padding-left: 30px;
     padding-top: 29px;
 }
 
-.btt-diferente {
+.btt-dif {
     background: var(--bttResetDel);
     color: var(--white);
     box-shadow: 0px 5px 0px var(--bttResetDelShadow);
     font-size: larger;
 }
 
-#btt-diferente-t {
+#btt-dif-t {
     width: 150px;
     margin: 0px 15px 0px 19px;
 }
 
-#btt-diferente {
+#btt-dif {
     background: var(--bttEqual);
     color: var(--white);
     box-shadow: 0px 5px 0px var(--bttEqualShadow);
     width: 150px;
 }
 
-.btt-diferente:hover {
+.btt-dif:hover {
     background:  var(--bttResetDelHover);
 }
 
-#btt-diferente:hover {
+#btt-dif:hover {
     background: var(--bttDifHover);
 }
 

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const theme = ['theme1', 'theme2', 'theme3']
-    const botao = document.querySelector('.circulo')
+    const button = document.querySelector('.circle')
     const toggle = document.querySelector('.toggle')
-    const themeNums = document.querySelectorAll('num-lista li')
+    const themeNums = document.querySelectorAll('num-list li')
     const body = document.body;
     let themeIndex = 0;
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.classList.add(theme[themeIndex])
     }
 
-    botao.addEventListener('click', () => {
+    button.addEventListener('click', () => {
         themeIndex = (themeIndex + 1) % theme.length;
         updateTheme();
     })

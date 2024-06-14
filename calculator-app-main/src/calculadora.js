@@ -1,95 +1,95 @@
 const result = document.querySelector('p')
-const botoes = document.querySelectorAll('button')
+const buttons = document.querySelectorAll('button')
 
-let numeroAtual = "";
-let primOperando = null; //null= quando ele existe  mas nao tem nada definido
-let operador = null;
+let currentNum = "";
+let firstOperand = null; //null= quando ele existe  mas nao tem nada definido
+let operator = null;
 let restart = false;
 
 function updateResult(originClear = false){
-    result.innerText = originClear ? 0 : numeroAtual.replace(".", ",");
+    result.innerText = originClear ? 0 : currentNum.replace(".", ",");
 }
 
-function addDigito(digit){
-    if(digit == "," && (numeroAtual.includes(",") || !numeroAtual)){
+function addDigit(digit){
+    if(digit == "," && (currentNum.includes(",") || !currentNum)){
         return
     }
-    numeroAtual += digit;
+    currentNum += digit;
     updateResult();
 }
 
-function setOperacao(newOperator){  //faz conta com o resultado da primeira conta feita
-    if(numeroAtual){
-        calcular();
-        primOperando = parseFloat(numeroAtual.replace(",", "."))
-        numeroAtual = "";
+function setOperator(newOperator){  //faz conta com o resultado da primeira conta feita
+    if(currentNum){
+        calculate();
+        firstOperand = parseFloat(currentNum.replace(",", "."))
+        currentNum = "";
     }
-    operador = newOperator;
+    operator = newOperator;
 }
 
-function calcular(){
-    if(operador == null || primOperando == null) return;
-    let segOperando = parseFloat(numeroAtual.replace(",", "."))
+function calculate(){
+    if(operator == null || firstOperand == null) return;
+    let secOperand = parseFloat(currentNum.replace(",", "."))
     let resultValue;
 
-    switch(operador){
+    switch(operator){
         case '+':
-            resultValue = primOperando + segOperando
+            resultValue = firstOperand + secOperand
             break;
         case '-':
-            resultValue = primOperando - segOperando
+            resultValue = firstOperand - secOperand
             break;
         case 'x':
-            resultValue = primOperando * segOperando
+            resultValue = firstOperand * secOperand
             break;
         case '÷':
-            resultValue = primOperando / segOperando
+            resultValue = firstOperand / secOperand
             break;
         default:
             return;
     }
 
     if(resultValue.toString().split(".")[1]?.length > 5){
-        numeroAtual = parseFloat(resultValue.toFixed(5)).toString()
+        currentNum = parseFloat(resultValue.toFixed(5)).toString()
     } else {
-        numeroAtual = resultValue.toString();
+        currentNum = resultValue.toString();
     }
 
-    operador = null;
-    primOperando = null;
+    operator = null;
+    firstOperand = null;
     restart = true;
     updateResult();
 }
 
 function reset() {
-    numeroAtual = "";
-    primOperando = null;
-    operador = null;
+    currentNum = "";
+    firstOperand = null;
+    operator = null;
     updateResult(true);
 }
 
-function delNumeros() {
-    if(numeroAtual.length > 1){
-        numeroAtual = numeroAtual.slice(0, -1)
+function delNums() {
+    if(currentNum.length > 1){
+        currentNum = currentNum.slice(0, -1)
     } else {
-        numeroAtual = "0";
+        currentNum = "0";
     }
-    result.textContent = numeroAtual;
+    result.textContent = currentNum;
 }
 
-botoes.forEach((botao) => {
-    botao.addEventListener('click', () => {
-        const botaoTexto = botao.innerText;
-        if(/^[0-9,]+$/.test(botaoTexto)){
-            addDigito(botaoTexto);
-        } else if(["+", "-", "x", "÷"].includes(botaoTexto)) {
-            setOperacao(botaoTexto);
-        } else if(botaoTexto == "=") {
-            calcular();
-        } else if(botaoTexto == "RESET"){
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const buttonText = button.innerText;
+        if(/^[0-9,]+$/.test(buttonText)){
+            addDigit(buttonText);
+        } else if(["+", "-", "x", "÷"].includes(buttonText)) {
+            setOperator(buttonText);
+        } else if(buttonText == "=") {
+            calculate();
+        } else if(buttonText == "RESET"){
             reset();
-        } else if(botaoTexto == "DEL") {
-            delNumeros()
+        } else if(buttonText == "DEL") {
+            delNums()
         }
     })
 })
