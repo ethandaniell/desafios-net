@@ -1,2 +1,2 @@
 # desafios-net
- Desafios para treinar CSS e HTML
+Challenges for CSS and HTML training.
