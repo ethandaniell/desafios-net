@@ -1,8 +1,3 @@
-:root {
-    --fontPrim: "Barlow Condensed", sans-serif;
-    --fontSec: "Bellefair", serif;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +8,10 @@ a {
     color: inherit;
 }
 
+.nav-home {
+    border-bottom: 3px solid white;
+}
+
 .container-home {
     display: flex;
     justify-content: space-evenly;
@@ -21,12 +20,12 @@ a {
 }
 
 .tittle, .description {
-    font-family: var(--fontPrim);
+    font-family: "Barlow Condensed", sans-serif;
     color: white;
 }
 
 .tittle-bigger, .explore-bttn{
-    font-family: var(--fontSec)
+    font-family: "Bellefair", serif;
 }
 
 .tittle, .tittle-bigger  {
