@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+/* .container-destination, .destination-header, .destination-content {
+    border: 2px solid white;
+} */
+
 .nav-destination {
     border-bottom: 3px solid white;
 }
@@ -14,12 +18,13 @@
     justify-content: center;
     align-items: center;
     height: 80%;
-    gap: 90px;
+
 }
 
 .destination-header {
     height: 95%;
     padding: 20px;
+    width: 43%;
 }
 
 .destination-header h1 {
