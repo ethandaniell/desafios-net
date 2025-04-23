@@ -52,3 +52,11 @@ nav {
     text-decoration: none;
     color: white;
 }
+
+.nav-btn-active {
+    border-bottom: 3px solid white;
+}
+
+.toggle-button-open {
+    display: none;
+}

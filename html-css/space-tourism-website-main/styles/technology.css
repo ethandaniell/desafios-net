@@ -95,3 +95,8 @@
 .tech-image img {
     width: 700px;
 }
+
+.num-active {
+    color: black;
+    background-color: white;
+}

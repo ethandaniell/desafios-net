@@ -102,7 +102,12 @@
 
 .km, .time {
     margin-top: 10px;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 200;
-    font-family: "Bellefair", serif;;
+    font-family: "Bellefair", serif;
+    white-space: nowrap;
+}
+
+.planet-navbar-active {
+    border-bottom: 3px solid white;
 }
