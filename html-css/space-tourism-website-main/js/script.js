@@ -40,15 +40,20 @@ menu1.src = '../assets/shared/icon-hamburger.svg';
 const menu2 = new Image();
 menu2.src = '../assets/shared/icon-close.svg';
 
+hamMenu.innerHTML = '';
 let hamMenuIcon = hamMenu.appendChild(menu1);
 
 hamMenu.onclick = () => {
     const isHamburguer = hamMenuIcon.src.includes('icon-hamburger');
-    hamMenuIcon.src = isHamburguer ? menu2.src : menu1.src;
+
+    hamMenu.removeChild(hamMenuIcon);
+    hamMenuIcon = hamMenu.appendChild(isHamburguer ? menu2 : menu1);
+
     navLinks.classList.toggle('nav-list-active', isHamburguer);
 };
 
 updateNavButton();
+
 
 // Destination page
 window.addEventListener('load', () => {

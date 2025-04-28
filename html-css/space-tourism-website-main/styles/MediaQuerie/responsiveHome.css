@@ -1,0 +1,83 @@
+/* tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .container-home {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 60px;
+    }
+
+    .main-text {
+        text-align: center;
+        width: 90%;
+        margin-top: 90px;
+    }
+
+    .tittle {
+        font-size: 37px;
+    }
+
+    .tittle-bigger {
+        font-size: 170px;
+    }
+
+    .description {
+        font-size: 20px;
+        width: 687px;
+    }
+
+    .main-bttn {
+        margin-bottom: 90px;
+    }
+
+    .explore-bttn {
+        width: 280px;
+        height: 280px;
+        font-size: 33px;
+    }
+}
+
+/* mobile styles */
+@media (max-width: 767px) {
+
+    .container-home {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 60px;
+    }
+
+    .main-text {
+        text-align: center;
+        width: 65%;
+        margin-top: 90px;
+    }
+
+    .tittle {
+        font-size: 27px;
+    }
+
+    .tittle-bigger {
+        font-size: 100px;
+    }
+
+    .description {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .main-bttn {
+        margin-bottom: 90px;
+    }
+
+    .explore-bttn {
+        width: 220px;
+        height: 220px;
+        font-size: 27px;
+    }
+
+    .explore-bttn:hover {
+        box-shadow: 3px 3px 0px 57px rgba(255, 255, 255, 0.13);
+    }
+}

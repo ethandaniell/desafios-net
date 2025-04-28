@@ -60,3 +60,62 @@ nav {
 .toggle-button-open {
     display: none;
 }
+
+/*Nav media querie*/
+
+/* tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-line {
+        display: none;
+    }
+
+    nav {
+        border: .5px solid rgba(255, 255, 255, 0.014);
+        width: 39rem;
+    }
+
+    .nav-list li {
+        width: 129px;
+        font-size: 17px;
+        margin-right: 10px;
+    }
+
+}
+
+/* mobile styles */
+@media (max-width: 767px) {
+    .toggle-button-open {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        width: 30px;
+        height: 30px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .header-line {
+        display: none;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 72%;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.267);
+        transition: right 0.4s ease-in-out;
+    }
+
+    .nav-list-active {
+        right: 0;
+    }
+
+    .nav-list li {
+        border: 2px solid #fff;
+        width: 100%;
+        font-size: 17px;
+    }
+}

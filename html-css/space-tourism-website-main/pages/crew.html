@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="../styles/nav.css">
   <link rel="stylesheet" href="../styles/crew.css">
-  <link rel="stylesheet" href="../styles/responsive.css">
+  <link rel="stylesheet" href="../styles/MediaQuerie/responsiveCrew.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +17,21 @@
   <title>Crew | Space tourism website</title>
 
   <style>
-    @media only screen and (min-width:375px){
+    @media only screen and (max-width: 767px){
         body {
             background: url("/assets/crew/background-crew-mobile.jpg");
             background-size: cover;
             height: 100vh;
         }
     }
-    @media only screen and (min-width:768px){
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
         body {
             background: url("/assets/crew/background-crew-tablet.jpg");
             background-size: cover;
             height: 100vh;
         }
     }
-    @media only screen and (min-width:1280px){
+    @media only screen and (min-width: 1024px){
         body {
             background: url("/assets/crew/background-crew-desktop.jpg");
             background-size: cover;
@@ -60,14 +60,16 @@
         <h1 class="num">02</h1>
         <h1>Meet your crew</h1>
       </div>
-      <h1 class="position">Commander</h1>
-      <h2 class="crew-name">Douglas Hurley</h2>
-      <p class="crew-desc">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-      <div class="crew-nav">
-        <div class="nav-circles" id="nav-c1"></div>
-        <div class="nav-circles" id="nav-c2"></div>
-        <div class="nav-circles" id="nav-c3"></div>
-        <div class="nav-circles" id="nav-c4"></div>
+      <div class="crew-content">
+        <h1 class="position">Commander</h1>
+        <h2 class="crew-name">Douglas Hurley</h2>
+        <p class="crew-desc">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+        <div class="crew-nav">
+          <div class="nav-circles" id="nav-c1"></div>
+          <div class="nav-circles" id="nav-c2"></div>
+          <div class="nav-circles" id="nav-c3"></div>
+          <div class="nav-circles" id="nav-c4"></div>
+        </div>
       </div>
     </div>
     <div class="crew-image">

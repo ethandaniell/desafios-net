@@ -1,0 +1,113 @@
+/* tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .container-destination {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 60px;
+    }
+
+    .destination-header {
+        width: 94%;
+    }
+    
+    .destination-header h1 {
+        font-size: 28px;
+    }
+
+    .destination-header img {
+        width: 400px;
+        margin-left: 23%;
+    }
+
+    .destination-content {
+        width: 94%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .destination-content h2 {
+        font-size: 85px;
+    }
+
+    .description {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .destination-facts-container {
+        width: 600px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* mobile styles */
+@media (max-width: 767px) {
+    .container-destination {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 60px;
+    }
+
+    .destination-header {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .destination-header h1 {
+        font-size: 28px;
+    }
+
+    .destination-header img {
+        width: 300px;
+    }
+
+    .destination-content {
+        width: 94%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .destination-list {
+        font-size: 27px
+    }
+
+    .destination-content h2 {
+        font-size: 95px;
+    }
+
+    .description {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .destination-facts-container {
+        width: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40px;
+    }
+
+    .distance, .travel-time {
+        font-size: 23px;
+    }
+    
+    .km, .time {
+       font-size: 37px;
+    }
+}

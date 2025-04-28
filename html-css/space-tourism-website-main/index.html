@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/home.css">
-  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/MediaQuerie/responsiveHome.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +17,21 @@
   <title>Home | Space tourism website</title>
 
   <style>
-    @media only screen and (min-width:375px){
+    @media only screen and (max-width: 767px){
         body {
             background: url("/assets/home/background-home-mobile.jpg");
             background-size: cover;
             height: 100vh;
         }
     }
-    @media only screen and (min-width:768px){
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
         body {
             background: url("/assets/home/background-home-tablet.jpg");
             background-size: cover;
             height: 100vh;
         }
     }
-    @media only screen and (min-width:1280px){
+    @media only screen and (min-width: 1024px){
         body {
             background: url("/assets/home/background-home-desktop.jpg");
             background-size: cover;
