@@ -87,7 +87,7 @@ nav {
     .toggle-button-open {
         display: block;
         position: absolute;
-        top: 1.5rem;
+        top: 2rem;
         right: 2rem;
         width: 30px;
         height: 30px;
@@ -102,10 +102,13 @@ nav {
     .nav-list {
         position: fixed;
         top: 0;
-        height: 100vh;
+        height: 60rem;
         width: 72%;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: -50px 0px 0px 0px;
         flex-direction: column;
-        background: rgba(255, 255, 255, 0.267);
+        background: url(../assets/mobile-navigation.png) no-repeat center center/cover;
         transition: right 0.4s ease-in-out;
     }
 
@@ -113,9 +116,18 @@ nav {
         right: 0;
     }
 
+    .nav-home {
+        margin-top: 150px;
+    }
+
     .nav-list li {
-        border: 2px solid #fff;
-        width: 100%;
-        font-size: 17px;
+        width: 50%;
+        font-size: 23px;
+        justify-content: left;
+        margin-left: 50px;
+    }
+
+    .nav-list li:hover {
+        border: none;
     }
 }
